@@ -25,7 +25,7 @@ hooks:
     # Deploy hooks can access services but the file system is now read-only.
     deploy: |  
         set -e
-        rm -rf server
+        rm -rf server/*
         cp * server/*
         rm -rf var/cache/*
         if [ ! -f var/writeable/installed.lock ]; then
