@@ -4,7 +4,7 @@
 name: 'app'
 
 # The type key specifies the language and version for your application.
-type: 'php:7.0'
+type: 'php:7.4'
 
 # On PHP, there are multiple build flavors available. Pretty much everyone
 # except Drupal 7 users will want the composer flavor.
@@ -63,15 +63,12 @@ mounts:
     'translations':
         source: local
         source_path: 'translations'
-    'app/Resources/translations':
-        source: local
-        source_path: 'resources-translations'
     'config':
         source: local
         source_path: 'config'
-    'app/config':
+    'app':
         source: local
-        source_path: 'app-config'
+        source_path: 'app'
     'img':
         source: local
         source_path: 'img'
