@@ -29,6 +29,7 @@ hooks:
         rsync -a init/img/* img/
         rsync -a init/config/* config/
         rsync -a init/translations/* translations/
+        rsync -a init/resources-translations/* app/Resources/translations/
         rsync -a init/app-config/* app/config/
         rsync -a init/themes/* themes/
         rsync -a init/admin-dev/import/* admin-dev/import/
