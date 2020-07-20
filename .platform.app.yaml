@@ -29,10 +29,9 @@ hooks:
         rsync -a init/img/* img/
         rsync -a init/config/* config/
         rsync -a init/translations/* translations/
-        rsync -a init/resources-translations/* app/Resources/translations/
-        rsync -a init/app-config/* app/config/
+        rsync -a init/app/* app/
         rsync -a init/themes/* themes/
-        rsync -a init/admin-dev/import/* admin-dev/import/
+        rsync -a init/admin-dev/* admin-dev/
         rsync -a init/mails/* mails/
         rm -rf var/cache/*
         if [ ! -f var/writeable/installed.lock ]; then
